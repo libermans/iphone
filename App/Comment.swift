@@ -6,6 +6,7 @@ class Comment: ModelObject {
     var date: Date!
     var user: User!
     var text: String!
+    var replies: []Comment
     
     required init(id: Int) {
         super.init(id: id)
